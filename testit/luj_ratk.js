@@ -1,0 +1,11 @@
+var oikeat=new Array()
+oikeat[1]='a'
+oikeat[2]='b'
+oikeat[3]='b'
+oikeat[4]='d'
+oikeat[5]='d'
+oikeat[6]='a'
+oikeat[7]='c'
+oikeat[8]='c'
+oikeat[9]='d'
+oikeat[10]='b'

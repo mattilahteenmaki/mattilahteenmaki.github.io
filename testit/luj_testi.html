@@ -1,0 +1,289 @@
+<html>
+<head>
+<title>Lujuusopin perusteiden testi</title>
+<link rel="stylesheet" type="text/css" href="../tyylit.css">
+</head>
+<body bgcolor="#FFFFFF">
+<script src="luj_ratk.js"></script>
+<script>var valinnat=new Array();document.cookie="ready=yes"</script>
+<h2 class="viher" align="center"><strong>Lujuusopin perusteiden testi</strong></h2>
+<p class="pieni" align="center">
+<table class="pieni" border="0" width="600" cellspacing="0" cellpadding="5">
+  <tr>
+    <td width="600"><form method="POST" name="lujtesti">     
+      <table class="pieni" border="1" width="600" cellspacing="0" cellpadding="0">
+        <tr>
+          <th colspan="2" width="600" bgcolor="#eaeaea">Miten materiaalin kimmomoduulin ja liukumoduulin suuruudet suhtautuvat toisiinsa?</th>
+        </tr>
+        <tr>
+          <td width="550">&nbsp;&nbsp;Kimmomoduuli on aina liukumoduulia suurempi.</td>
+          <td align="center" width="50"><input type="radio" value="V1" name="k1" onClick="valinnat[1]='a'"></td>
+         </tr>
+         <tr>
+           <td width="550">&nbsp;&nbsp;Liukumoduuli on aina kimmomoduulia suurempi.</td>
+           <td align="center"  width="50"><input type="radio" value="V2" name="k1" onClick="valinnat[1]='b'"></td>
+         </tr>
+         <tr>
+           <td width="550">&nbsp;&nbsp;Se kumpi on suurempi riippu materiaalista.</font></td>
+           <td align="center"  width="50"><input type="radio" value="V3" name="k1" onClick="valinnat[1]='c'"></td>
+         </tr>
+         <tr>
+           <td width="550">&nbsp;&nbsp;Kimmomoduuli ja liukumoduuli ovat aina yhtäsuuria.</td>
+           <td align="center"  width="50"><input type="radio" value="V4" name="k1" onClick="valinnat[1]='d'"></td>
+         </tr>
+      </table>
+
+      <p>&nbsp;</p>
+
+      <table class="pieni" border="1" width="600" cellspacing="0" cellpadding="0">
+        <tr>
+          <th colspan="2" width="600" bgcolor="#eaeaea">Mikä on pääjännitys?</th>
+        </tr>
+        <tr>
+          <td width="550">&nbsp;&nbsp;Lujuusopin opiskelusta aiheutuva vakavahko oireyhtymä.</td>
+          <td align="center" width="50"><input type="radio" value="V1" name="k2" onClick="valinnat[2]='a'"></td>
+        </tr>
+        <tr>
+          <td width="550">&nbsp;&nbsp;Sen suunnan normaalijännitys, jossa leikkausjännitys on nolla.</td>
+          <td align="center" width="50"><input type="radio" value="V2" name="k2" onClick="valinnat[2]='b'"></td>
+        </tr>
+        <tr>
+          <td width="550">&nbsp;&nbsp;Sen suunnan leikkausjännitys, jossa normaalijännitys on nolla.</td>
+          <td align="center" width="50"><input type="radio" value="V3" name="k2" onClick="valinnat[2]='c'"></td>
+        </tr>
+        <tr>
+          <td width="550">&nbsp;&nbsp;Leikkausjännityksen maksimiarvo.</td>
+          <td align="center" width="50"><input type="radio" value="V4" name="k2" onClick="valinnat[2]='d'"></td>
+        </tr>
+      </table>
+
+      <p>&nbsp;</p>
+
+      <table class="pieni" border="1" width="600" cellspacing="0" cellpadding="0">
+        <tr>
+          <th colspan="2" width="600" bgcolor="#eaeaea">Mikä seuraavista teräksen myötörajaa koskevista väitteistä ei pidä paikkaansa?</th>
+        </tr>
+        <tr>
+          <td width="550">&nbsp;&nbsp;Myötöraja on aina suhteellisuusrajaa suurempi.</td>
+          <td align="center" width="50"><input type="radio" value="V1" name="k3" onClick="valinnat[3]='a'"></td>
+        </tr>
+        <tr>
+          <td width="550">&nbsp;&nbsp;Myötölujittumisalueella jännitys on myötörajaa pienempi.</td>
+          <td align="center" width="50"><input type="radio" value="V2" name="k3" onClick="valinnat[3]='b'"></td>
+        </tr>
+        <tr>
+          <td width="550">&nbsp;&nbsp;Myötörajan ylityksen jälkeen syntyneet venymät eivät ole palautuvia.</td>
+          <td align="center" width="50"><input type="radio" value="V3" name="k3" onClick="valinnat[3]='c'"></td>
+        </tr>
+        <tr>
+          <td width="550">&nbsp;&nbsp;Standarditeräksen S235 myötöraja on 235 MPa.</td>
+          <td align="center" width="50"><input type="radio" value="V4" name="k3" onClick="valinnat[3]='d'"></td>
+        </tr>
+      </table>
+
+      <p>&nbsp;</p>
+
+      <table class="pieni" border="1" width="600" cellspacing="0" cellpadding="0">
+        <tr>
+          <th colspan="2" width="600" bgcolor="#eaeaea">Miten vetosauvan pituuden muutos riippuu materiaalin kimmomoduulista?</th>
+        </tr>
+        <tr>
+          <td width="550">&nbsp;&nbsp;Riippuvuus on kohtuullisella tarkkuudella parabolinen.</td>
+          <td align="center" width="50"><input type="radio" value="V1" name="k4" onClick="valinnat[4]='a'"></td>
+        </tr>
+        <tr>
+          <td width="550">&nbsp;&nbsp;Ei riipu lainkaan kimmomoduulista.</td>
+          <td align="center" width="50"><input type="radio" value="V2" name="k4" onClick="valinnat[4]='b'"></td>
+        </tr>
+        <tr>
+          <td width="550">&nbsp;&nbsp;Se on suoraan verrannollinen kimmomoduulin arvoon.</td>
+          <td align="center" width="50"><input type="radio" value="V3" name="k4" onClick="valinnat[4]='c'"></td>
+        </tr>
+        <tr>
+          <td width="550">&nbsp;&nbsp;Se on kääntäen verrannollinen kimmomoduulin arvoon.</td>
+          <td align="center" width="50"><input type="radio" value="V4" name="k4" onClick="valinnat[4]='d'"></td>
+        </tr>
+      </table>
+
+      <p>&nbsp;</p>
+
+      <table class="pieni" border="1" width="600" cellspacing="0" cellpadding="0">
+        <tr>
+          <th colspan="2" width="600" bgcolor="#eaeaea">Mikä seuraavista palkin normaalijännitystä koskevista väitteistä pitää paikkansa?</th>
+        </tr>
+        <tr>
+          <td width="550">&nbsp;&nbsp;Palkin normaalijännitys on aina niin pieni, ettei sitä kannata ottaa huomioon.</td>
+          <td align="center" width="50"><input type="radio" value="V1" name="k5" onClick="valinnat[5]='a'"></td>
+        </tr>
+        <tr>
+          <td width="550">&nbsp;&nbsp;Suurin normaalijännitys esiintyy usein palkin pintakeskiön kohdalla.</td>
+          <td align="center" width="50"><input type="radio" value="V2" name="k5" onClick="valinnat[5]='b'"></td>
+        </tr>
+        <tr>
+          <td width="550">&nbsp;&nbsp;Taivutuspalkin normaalijännitys on kaikissa poikkileikkauksen pisteissä sama.</td>
+          <td align="center" width="50"><input type="radio" value="V3" name="k5" onClick="valinnat[5]='c'"></td>
+        </tr>
+        <tr>
+          <td width="550">&nbsp;&nbsp;Itseisarvoltaan suurin jännitys on nurkassa, joka on kauimpana neutraaliakselista.</td>
+          <td align="center" width="50"><input type="radio" value="V4" name="k5" onClick="valinnat[5]='d'"></td>
+        </tr>
+      </table>
+
+      <p>&nbsp;</p>
+
+      <table class="pieni" border="1" width="600" cellspacing="0" cellpadding="0">
+        <tr>
+          <th colspan="2" width="600" bgcolor="#eaeaea">Mikä seuraavista palkin taipumaa koskevista väitteistä ei pidä paikkaansa?</th>
+        </tr>
+        <tr>
+          <td width="550">&nbsp;&nbsp;Teräspalkin maksimitaipumaa voidaan pienentää käyttämällä lujempaa teräslaatua.</td>
+          <td align="center" width="50"><input type="radio" value="V1" name="k6" onClick="valinnat[6]='a'"></td>
+        </tr>
+        <tr>
+          <td width="550">&nbsp;&nbsp;Kimmoviivan differentiaaliyhtälöstä saadaan taivutusmomentin aiheuttama taipuma.</td>
+          <td align="center" width="50"><input type="radio" value="V2" name="k6" onClick="valinnat[6]='b'"></td>
+        </tr>
+        <tr>
+          <td width="550">&nbsp;&nbsp;Palkin poikkileikkauksen neliömomentti taivutusakselin suhteen vaikuttaa taipuman arvoihin.</td>
+          <td align="center" width="50"><input type="radio" value="V3" name="k6" onClick="valinnat[6]='c'"></td>
+        </tr>
+        <tr>
+          <td width="550">&nbsp;&nbsp;Leikkausvoiman aiheuttama taipuma on hoikalla palkilla merkityksetön.</td>
+          <td align="center" width="50"><input type="radio" value="V4" name="k6" onClick="valinnat[6]='d'"></td>
+        </tr>
+      </table>
+
+      <p>&nbsp;</p>
+
+      <table class="pieni" border="1" width="600" cellspacing="0" cellpadding="0">
+        <tr>
+          <th colspan="2" width="600" bgcolor="#eaeaea">Mikä seuraavista vääntökeskiötä koskevista väitteistä pitää paikkansa?</th>
+        </tr>
+        <tr>
+          <td width="550">&nbsp;&nbsp;Vääntökeskiö ja pintakeskiö ovat aina samassa pisteessä.</td>
+          <td align="center" width="50"><input type="radio" value="V1" name="k7" onClick="valinnat[7]='a'"></td>
+        </tr>
+        <tr>
+          <td width="550">&nbsp;&nbsp;Vääntökeskiö on piste, jossa esiintyy leikkausjännityksen maksimiarvo.</td>
+          <td align="center" width="50"><input type="radio" value="V2" name="k7" onClick="valinnat[7]='b'"></td>
+        </tr>
+        <tr>
+          <td width="550">&nbsp;&nbsp;Vääntökeskiö on piste, jonka ympäri poikkileikkaus kiertyy vääntökulman.</td>
+          <td align="center" width="50"><input type="radio" value="V3" name="k7" onClick="valinnat[7]='c'"></td>
+        </tr>
+        <tr>
+          <td width="550">&nbsp;&nbsp;Vääntökeskiö ei sijaitse poikkileikkauksen symmetria-akselilla.</td>
+          <td align="center" width="50"><input type="radio" value="V4" name="k7" onClick="valinnat[7]='d'"></td>
+        </tr>
+      </table>
+
+      <p>&nbsp;</p>
+
+      <table class="pieni" border="1" width="600" cellspacing="0" cellpadding="0">
+        <tr>
+          <th colspan="2" width="600" bgcolor="#eaeaea">Minkä Eulerin perusnurjahdustapauksen nurjahdusvoima on toiseksi pienin? </th>
+        </tr>
+        <tr>
+          <td width="550">&nbsp;&nbsp;Tuennat ovat: vapaa pää ja jäykkä.</td>
+          <td align="center" width="50"><input type="radio" value="V1" name="k8" onClick="valinnat[8]='a'"></td>
+        </tr>
+        <tr>
+          <td width="550">&nbsp;&nbsp;Tuennat ovat: jäykkä ja jäykkä.</td>
+          <td align="center" width="50"><input type="radio" value="V2" name="k8" onClick="valinnat[8]='b'"></td>
+        </tr>
+        <tr>
+          <td width="550">&nbsp;&nbsp;Tuennat ovat: nivel ja nivel.</td>
+          <td align="center" width="50"><input type="radio" value="V3" name="k8" onClick="valinnat[8]='c'"></td>
+        </tr>
+        <tr>
+          <td width="550">&nbsp;&nbsp;Tuennat ovat: nivel ja jäykkä.</td>
+          <td align="center" width="50"><input type="radio" value="V4" name="k8" onClick="valinnat[8]='d'"></td>
+        </tr>
+      </table>
+
+      <p>&nbsp;</p>
+
+      <table class="pieni" border="1" width="600" cellspacing="0" cellpadding="0">
+        <tr>
+          <th colspan="2" width="600" bgcolor="#eaeaea">Mikä on tarkin tunnettu lujuushypoteesi teräksen myötövaurion tutkimiseen?</th>
+        </tr>
+        <tr>
+          <td width="550">&nbsp;&nbsp;Maksimileikkausjännityshypoteesi (MLJH).</td>
+          <td align="center" width="50"><input type="radio" value="V1" name="k9" onClick="valinnat[9]='a'"></td>
+        </tr>
+        <tr>
+          <td width="550">&nbsp;&nbsp;Sisäisen kitkan hypoteesi (SKH).</td>
+          <td align="center" width="50"><input type="radio" value="V2" name="k9" onClick="valinnat[9]='b'"></td>
+        </tr>
+        <tr>
+          <td width="550">&nbsp;&nbsp;Maksimipääjännityshypoteesi (MPJH).</td>
+          <td align="center" width="50"><input type="radio" value="V3" name="k9" onClick="valinnat[9]='c'"></td>
+        </tr>
+        <tr>
+          <td width="550">&nbsp;&nbsp;Vakiovääristymisenergiahypoteesi (VVEH).</td>
+          <td align="center" width="50"><input type="radio" value="V4" name="k9" onClick="valinnat[9]='d'"></td>
+        </tr>
+      </table>
+
+      <p>&nbsp;</p>
+
+       
+	  <table class="pieni" border="1" width="600" cellspacing="0" cellpadding="0">
+        <tr>
+          <th colspan="2" width="600" bgcolor="#eaeaea">Mitä tarkoittaa materiaalin vaihtolujuus?</th>
+        </tr>
+        <tr>
+          <td width="550">&nbsp;&nbsp;Suurinta mahdollista ylempää rajajännitystä alemman rajajännityksen ollessa nolla.</td>
+          <td align="center" width="50"><input type="radio" value="V1" name="k10" onClick="valinnat[10]='a'"></td>
+        </tr>
+        <tr>
+          <td width="550">&nbsp;&nbsp;Suurinta mahdollista jännitysamplitudia keskijännityksen ollessa nolla.</td>
+          <td align="center" width="50"><input type="radio" value="V2" name="k10" onClick="valinnat[10]='b'"></td>
+        </tr>
+        <tr>
+          <td width="550">&nbsp;&nbsp;Suurinta mahdollista keskijännitystä jännitysamplitudin ollessa nolla.</td>
+          <td align="center" width="50"><input type="radio" value="V3" name="k10" onClick="valinnat[10]='c'"></td>
+        </tr>
+        <tr>
+          <td width="550">&nbsp;&nbsp;Suurinta mahdollista jännityksen vaihteluväliä keskijännityksen ollessa nolla.</td>
+          <td align="center" width="50"><input type="radio" value="V4" name="k10" onClick="valinnat[10]='d'"></td>
+        </tr>
+      </table>
+    </form></td>
+  </tr>
+</table>
+
+<form method="POST"><input align="center" type="button" value="Laske tulos!" name="nap1" onClick="arvioi()"></form>
+
+
+<script language="JavaScript">
+
+var eips=null
+for (j=1;j<=10;j++)
+{
+  for (m=0;m<=3;m++)
+  eval("document.lujtesti.k"+j+"["+m+"]").checked=false
+}
+
+function arvioi()
+{
+  var eips=null
+  for (i=1;i<=10;i++){
+    if (valinnat[i]!=oikeat[i]){
+      if (eips==null)
+        eips=i
+      else
+        eips+="/"+i
+      }
+    }
+  if (eips==null)
+    eips="a/b"
+  document.cookie='k='+eips
+  if (document.cookie=='')
+    alert("Selaimesi ei hyväksy pipareita! Muuta asetuksia!")
+  else
+    window.location="luj_tulos.html"
+}
+</script>
+</body>
+</html>

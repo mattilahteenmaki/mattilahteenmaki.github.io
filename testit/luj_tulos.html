@@ -1,0 +1,73 @@
+<html>
+<head>
+<title>Lujuusopin peruusteiden testin tulokset</title>
+<link rel="stylesheet" type="text/css" href="../tyylit.css">
+</head>
+<body bgcolor="#FFFFFF">
+<script src="luj_ratk.js"></script>
+<div align="center">
+<h2 class="viher" align="center"><strong>Testitulokset</strong></h2>
+<p class="pieni"><form method="POST" name="tulos">
+      <table  class="pieni" border="1" width="400" cellpadding="0">
+        <tr>
+          <th align="left" height="30" bgcolor="#eaeaea"><strong>&nbsp;&nbsp;Testin tulos:</strong></th>
+          <th align="center" height="30" bgcolor="#eaeaea"><input type="text" name="oikeat" size="20" style="border:0; background-color:#eaeaea" ></th>
+        </tr>
+        <tr>
+          <th align="left" height="30" bgcolor="#eaeaea"><strong>&nbsp;&nbsp;Väärät vastaukset:</strong></th>
+          <th align="center" height="30" bgcolor="#eaeaea"><input type="text" name="vaarat" size="20" style="border:0; background-color:#eaeaea"></th>
+        </tr>
+        <tr>
+          <th align="left" height="30" bgcolor="#eaeaea"><strong>&nbsp;&nbsp;Prosenttiarvio:</strong></th>
+          <th align="center" height="30" bgcolor="#eaeaea"><input type="text" name="prosentit" size="20" style="border:0; background-color:#eaeaea"></th>
+        </tr>
+      </table>
+    </form>
+    <form method="POST">
+	  <input type="button" value="Uusi testi?" name="nap1" onClick="history.go(-1)">
+	  <input type="button" value="Näytä ratkaisu!" name="nap2" onClick="haeratk()">
+	</form>
+</p>
+</div>
+
+<script>
+var vaara=0
+var lkm=10
+for (s=0;s<=2;s++)
+  document.tulos[s].value=""
+var tulos=document.cookie.split(";")
+for (n=0;n<=tulos.length-1;n++){
+  if (tulos[n].charAt(1)=='k')
+    par=n
+}
+var virheet=tulos[par].split("=")
+var vir=virheet[1].split("/")
+if (vir[vir.length-1]=='b')
+  vir=""
+document.tulos[0].value=lkm-vir.length+"/"+lkm
+document.tulos[2].value=(lkm-vir.length)/lkm*100+"%"
+for (r=0;r<vir.length;r++)
+  document.tulos[1].value+=vir[r]+((r==vir.length-1) ? "":", ")
+
+function haeratk(){
+  var ikku2=window.open("","ikku2","width=350,height=350")
+  ikku2.focus()
+  ikku2.document.open()
+  ikku2.document.write('<title>Ratkaisu</title>')
+  ikku2.document.write('<body bgcolor="#FFFFFF">')
+  ikku2.document.write('<center><h3><font face="Arial">Testitehtävien ratkaisu:</font></h3></center>')
+  ikku2.document.write('<center><font face="Arial">')
+  for (i=1;i<=lkm;i++){
+    for (r=0;r<vir.length;r++){if (i==vir[r]) vaara=1}
+    if (vaara==1){
+      ikku2.document.write("Kysymys "+i+"="+oikeat[i].fontcolor("red")+"<br>")
+      vaara=0}
+    else
+      ikku2.document.write("Kysymys "+i+"="+oikeat[i]+"<br>")}
+  ikku2.document.write('</center></font>')
+  ikku2.document.write('<p><center><font face="Arial">Väärät vastaukset on merkitty punaisella.</font></center></p>')
+  ikku2.document.close()
+}
+</script>
+</body>
+</html>

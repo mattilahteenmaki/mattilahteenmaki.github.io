@@ -1,0 +1,64 @@
+body {
+       background-color:#FFFFFF;
+     }
+
+table {
+        background-color:#FFFFFF;
+      }
+
+table.pieni {
+             background-color:#FFFFFF;
+             font-family:verdana,helvetica,arial,sans-serif;
+             font-size:11px;
+            }
+
+td {
+     background-color:#FFFFFF;
+   }
+
+td.musta {
+           background-color:#000000;
+         } 
+
+td.hopea {
+           background-color:silver;
+         } 
+
+p {
+    font-family:verdana,helvetica,arial,sans-serif;
+    font-size:12px;
+  }
+
+p.palkki {
+    font-family:verdana,helvetica,arial,sans-serif;
+    font-size:12px;
+    font-weight:bold;
+    color:white;
+  }
+
+p.pieni {
+    font-family:verdana,helvetica,arial,sans-serif;
+    font-size:10px;
+  }
+
+a {
+    text-decoration:none;
+    color:white;
+    alink:white;
+  }
+
+a.pystyp {
+    text-decoration:none;
+    color:black;
+  }  
+
+a.viher {
+    text-decoration:none;
+    color:#144214;
+    alink:#144214;
+  }
+h2.viher {
+    color:#144214;
+    font-family:verdana,helvetica,arial,sans-serif;
+    font-size:18px;
+  }
